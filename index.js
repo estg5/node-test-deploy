@@ -12,6 +12,7 @@ const reqLogger = (req, res, next) => {
 };
 
 // middleware?
+app.use(express.static("build"));
 app.use(cors());
 app.use(express.json());
 app.use(reqLogger);
